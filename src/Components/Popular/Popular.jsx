@@ -6,7 +6,7 @@ import Item from '../Item/Item.jsx';
 
 const Popular = () =>{
     return(
-        <div className="popular">
+        <div className="popular-section">
             <h1>POPULAR ESSENTIALS</h1>
             <hr />
             <div className="popular-item">

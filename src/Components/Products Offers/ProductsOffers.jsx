@@ -1,15 +1,15 @@
 import React from "react";
-import './Offers.css'
+import './ProductsOffers.css'
 import offerImage from '../Assets/offer-image.png'
 
-const Offers = () =>{
+const ProductsOffers = () =>{
     return(
         
         <div className="offers">
             <div className="offers-left">
-                <h1>Exclusive</h1>
-                <h1>Offers For You</h1>
-                <p>ONLY ON BEST SELLERS PRODUCTS</p>
+                <h1>Unmissable</h1>
+                <h1>Deals Awaits You</h1>
+                <p>DIVE INTO A WORLD OF QUALITY</p>
                 <button>Check Now</button>
             </div>
             <div className="offers-right">
@@ -20,4 +20,4 @@ const Offers = () =>{
     )
 }
 
-export default Offers;
+export default ProductsOffers;

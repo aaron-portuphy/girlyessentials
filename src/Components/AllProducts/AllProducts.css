@@ -1,0 +1,27 @@
+.product-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    height: 90vh;
+    margin-bottom: 600px;
+    padding-bottom: 800px;
+}
+.product-section h1{
+    color: #171717;
+    font-size: 35px;
+    font-weight: 600;
+}
+.product-section hr{
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background: #252525;
+}
+.product-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+}

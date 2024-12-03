@@ -1,26 +1,26 @@
 import React from "react";
-import './Hero.css';
+import './ContactHero.css';
 import hand_icon from '../Assets/hand_icon.png';
 import arrow_icon from '../Assets/arrow.png';
-import hero_image from '../Assets/hero-image.png';
+import hero_image from '../Assets/ContactHero_Image.png';
 
-const Hero = () => {
+const ContactHero = () => {
     return (
         <div className="hero">
             {/* Left Section */}
             <div className="hero-left">
-                <h2>NEW ARRIVALS ONLY</h2>
+                <h2>REACH OUT NOW!</h2>
                 <div className="hero-title">
                     <div className="hero-hand-icon">
-                        <p>new</p>
-                        <img src={hand_icon} alt="Hand Icon" />
+                        <p>We'd</p>
+                        {/* <img src={hand_icon} alt="Hand Icon" /> */}
                     </div>
-                    <p className="collections">Collections</p>
-                    <p className="for-everyone">For Everyone</p>
+                    <p className="collections">Love To</p>
+                    <p className="for-everyone">Hear from You</p>
                 </div>
                 <div className="hero-latest-btn">
-                    <div>Latest Collection</div>
-                    <img src={arrow_icon} alt="Arrow Icon" />
+                    <div>Contact Us</div>
+                    {/* <img src={arrow_icon} alt="Arrow Icon" /> */}
                 </div>
             </div>
 
@@ -32,4 +32,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default ContactHero;

@@ -1,35 +1,63 @@
-.new-collection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 40px;
-    height: 90vh;
-    margin-bottom: 40px;
-    padding-bottom: 100px;
-}
-.new-collection h1{
-    color: #171717;
-    font-size: 35px;
-    font-weight: 600;
-}
-.new-collection hr{
-    width: 200px;
-    height: 20px;
-    border-radius: 10px;
-    background: #252525;
-}
-.collections{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    gap: 30px;
+.new-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 100px; /* Reduced excessive bottom margin */
+  padding: 0 20px; /* Added padding for mobile spacing */
 }
 
-.collections{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
-    gap: 30px;
+.new-collection h1 {
+  color: #171717;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center; /* Ensure proper alignment on all screen sizes */
+}
+
+.new-collection hr {
+  width: 200px;
+  height: 5px; /* Adjusted height for better visibility */
+  border-radius: 10px;
+  background: #252525;
+  margin: 10px 0; /* Added vertical spacing */
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default 4 columns for larger screens */
+  margin-top: 50px;
+  gap: 20px; /* Reduced gap between items */
+  justify-items: center; /* Center items in the grid */
+  width: 100%; /* Ensure the grid spans the container */
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .collections {
+      grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns for medium screens */
+      gap: 15px; /* Smaller spacing for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .collections {
+      grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns for tablets */
+      gap: 10px; /* Further reduce spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .new-collection {
+      padding: 0 10px; /* Reduce padding for smaller devices */
+  }
+
+  .new-collection h1 {
+      font-size: 28px; /* Reduce font size */
+  }
+
+  .collections {
+      grid-template-columns: 1fr; /* Single column for small screens */
+      gap: 10px; /* Minimal spacing between items */
+  }
 }

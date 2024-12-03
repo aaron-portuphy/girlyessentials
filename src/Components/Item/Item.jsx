@@ -17,7 +17,7 @@ const Item = (props) => {
             <button
         onClick={() =>
           window.open(
-            `https://wa.me/YOUR_WHATSAPP_NUMBER?text=Hi, I want to purchase: ${props.name} for ${props.price} GHS.`,
+            `https://wa.me/+233542641380?text=Hi, I want to purchase: ${props.name} for ${props.price} GHS.`,
             "_blank"
           )
         }

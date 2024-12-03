@@ -48,7 +48,11 @@
   text-align: left;
   margin: 0;
 }
-
+/* Add this to ensure "Our Exclusive" stays on one line */
+.hero-left .collections {
+  white-space: nowrap; /* Prevent wrapping */
+  font-size: 60px; /* Ensure font size consistency */
+}
 .hero-hand-icon {
   display: flex;
   align-items: center;
@@ -89,9 +93,7 @@
 }
 
 .hero-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width:inherit;
 }
 
 /* Responsive Styling */

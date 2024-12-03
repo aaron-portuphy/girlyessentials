@@ -1,40 +1,102 @@
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
-    height: 100px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  box-shadow: 0 1px 3px -2px black;
+  height: 100px;
+  position: relative;
 }
-.nav-logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.nav-logo {
+  display: flex;
+  align-items: center;
 }
-.logo{
-    height: 180px;
-    width: 180px;
+
+.logo {
+  height: 150px;
+  width: 150px;
+  padding-left: 100px;
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 50px;
-    color: #626262;
-    font-size: 16px;
-    font-weight: 500;
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding-right: 100px;
 }
-.nav-menu li{
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-menu a{
+  text-decoration: none;
+}
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: black;
+}
+
+/* Hamburger Button Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
+  }
+
+  .nav-menu {
+    display: none; /* Hide menu by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    cursor: pointer;
-}
-.nav-menu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: black;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 15px;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .nav-menu.open {
+    display: flex; /* Show menu when open class is applied */
+  }
+
+  .nav-menu li {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .nav-menu hr {
+    width: 20px;
+  }
 }

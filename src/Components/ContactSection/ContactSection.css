@@ -1,0 +1,178 @@
+.contact-page {
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-header {
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .contact-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .whatsapp-section,
+  .alternative-contact,
+  .faqs-section,
+  .location-section,
+  .hours-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .whatsapp-section h2,
+  .alternative-contact h2,
+  .faqs-section h2,
+  .location-section h2,
+  .hours-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .whatsapp-section p,
+  .alternative-contact p,
+  .faqs-section p,
+  .hours-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .whatsapp-button {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .social-links a {
+    color: #6a11cb;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #2575fc;
+  }
+  
+  .location-section iframe {
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hours-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .contact-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .contact-footer p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .contact-header p {
+      font-size: 1rem;
+    }
+  
+    .whatsapp-section h2,
+    .alternative-contact h2,
+    .faqs-section h2,
+    .location-section h2,
+    .hours-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .whatsapp-button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  
+    .social-links a {
+      font-size: 1rem;
+    }
+  
+    .location-section iframe {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-header h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-header p {
+      font-size: 0.9rem;
+    }
+  
+    .whatsapp-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .social-links a {
+      font-size: 0.9rem;
+    }
+  
+    .location-section iframe {
+      height: 200px;
+    }
+  }
+  

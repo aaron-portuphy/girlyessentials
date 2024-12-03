@@ -1,0 +1,76 @@
+.channel {
+    width: 100%; /* Ensure it takes full width */
+    max-width: 800px; /* Limit max width */
+    height: auto; /* Adjust height for responsive layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px; /* Adjust padding for responsiveness */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px; /* Reduced gap for better compactness */
+    box-sizing: border-box;
+}
+
+.channel h1 {
+    color: #454545;
+    font-size: 40px; /* Adjust for better scaling */
+    font-weight: 600;
+    margin-bottom: 10px; /* Add spacing below */
+}
+
+.channel p {
+    color: #454545;
+    font-size: 18px; /* Adjusted font size */
+    margin: 0 10px; /* Add slight side margins for readability */
+}
+
+.channel div button {
+    width: 200px; /* Adjust width for responsiveness */
+    height: 60px; /* Adjust height */
+    border-radius: 80px;
+    background: #25d366;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.channel div button:hover {
+    background: #1da851;
+}
+
+@media (max-width: 768px) {
+    .channel {
+        padding: 15px;
+        gap: 15px; /* Reduce gap for smaller screens */
+    }
+    .channel h1 {
+        font-size: 30px; /* Adjust font size for tablets */
+    }
+    .channel p {
+        font-size: 14px; /* Smaller font size for readability */
+    }
+    .channel div button {
+        width: 180px; /* Adjust button size */
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .channel h1 {
+        font-size: 25px; /* Further reduce font size for mobile */
+    }
+    .channel p {
+        font-size: 12px; /* Compact text for mobile */
+    }
+    .channel div button {
+        width: 150px; /* Adjust button size further */
+        height: 45px;
+        font-size: 12px;
+    }
+}
